@@ -1,5 +1,6 @@
 package com.dice;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -51,6 +52,17 @@ public class DiceJobSearch {
 		
 		//ensure count is more than 0
 		int countResult  = Integer.parseInt(count.replace(",", ""));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		if(countResult>0) {
 			System.out.println("step pass: keyword: "+keyword+ " search returned "
 					+ ""+ countResult+" results in "+location);
@@ -59,5 +71,6 @@ public class DiceJobSearch {
 					+ ""+ countResult+" results in "+location);
 		}
 		driver.close();
+		System.out.println("test is completed "+ LocalDateTime.now());//NZ
 	}
 }
